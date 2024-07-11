@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animations/screens/list_animation.dart';
+import 'package:flutter_animations/screens/onboard_screen.dart';
 
 import 'animated_button.dart';
 
@@ -11,9 +12,11 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<HomeScreen> {
+  // Map of the button Label & Screen to navigate
   Map<String, dynamic> btnMap = {
-    "Animated List": const ListAnimation(),
-    "Animated Button": const ButtonAnimation()
+    "List": const ListAnimation(),
+    "Button": const ButtonAnimation(),
+    "On-board screen": const OnboardScreen(),
   };
 
   @override
@@ -40,6 +43,7 @@ class _MyHomePageState extends State<HomeScreen> {
     );
   }
 
+  // Custom button widget
   Widget buttonWidget(String btnText, Widget screen) {
     return ElevatedButton(
         onPressed: () {
