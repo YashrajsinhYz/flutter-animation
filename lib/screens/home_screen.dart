@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations/screens/download_animation.dart';
 import 'package:flutter_animations/screens/list_animation.dart';
 import 'package:flutter_animations/screens/onboard_screen.dart';
 
@@ -17,6 +18,7 @@ class _MyHomePageState extends State<HomeScreen> {
     "List": const ListAnimation(),
     "Button": const ButtonAnimation(),
     "On-board screen": const OnboardScreen(),
+    "Download Button": const DownloadAnimation(),
   };
 
   @override
